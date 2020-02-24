@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoklassen und -elemente</title>
+    <style>
+        /* Pseudoelemente */
+        .demo01::first-letter {
+            font-family: Parchment;
+            font-size: 42px;
+        }
+
+        .demo02::first-line {
+            color: red;
+        }
+
+        .demo02{
+            border: 5px solid chartreuse;
+        }
+
+        .demo02::after{
+            display: block;
+            content: '';
+            border-bottom: 2px solid green;
+        }
+
+        .demo02::before{}
+
+
+
+        /* Pseudoklassen */
+        /* LoVe HAte */
+        a:link{
+            color: greenyellow;
+        }
+
+        a:visited{
+            color: brown;
+        }
+
+        a:hover{
+            color: gold;
+        }
+
+        a:active{
+            color: cyan;
+        }
+
+        :disabled{
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <input type="text" disabled>
+    <p class="demo01">Das ist ein Paragraph.</p>
+    <p>Das ist ein <a href="#">Paragraph.</a></p>
+    <p>Das ist ein Paragraph.</p>
+    <p>Das ist ein Paragraph.</p>
+    <p>Das ist ein Paragraph.</p>
+    <p class="demo01">Das ist ein Paragraph.</p>
+    <p>Das ist ein Paragraph.</p>
+    <p>Das ist ein Paragraph.</p>
+    <p>Das ist ein Paragraph.</p>
+    <div class="demo02">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        
+        Atque nam dolore cupiditate quae labore dolores veniam,
+        repellat officia minus recusandae enim ipsam voluptatem! Ea aliquid quasi velit nisi dolorum sequi accusamus
+        officia eius dolor rem, sint temporibus odit adipisci quae quo repellendus culpa a, iure ullam maxime animi, et
+        ratione dolores! Suscipit hic laborum repellendus error. Ab rem voluptas doloremque at ullam id quam?
+        Dignissimos culpa unde fugit amet earum illo corrupti, excepturi sed, veniam suscipit vero maiores aliquid quam
+        ullam rerum voluptate nobis consequatur! Nisi, officia quos quibusdam aliquam veniam accusantium similique
+        quaerat, atque asperiores vitae commodi deserunt tempore. Delectus aliquid ad corrupti ipsam corporis autem ipsa
+        harum quidem alias aspernatur. Eligendi, fugiat at, illo vero numquam, dolorem quos facere labore tempore
+        obcaecati dolore voluptas sunt corrupti ratione expedita dolores iure! Libero soluta eveniet beatae, vitae
+        perspiciatis pariatur alias maiores. Libero alias iure ab corporis id quibusdam tenetur minus nisi
+        necessitatibus earum amet impedit, obcaecati beatae. Nobis modi minima inventore. Veniam beatae corporis hic
+        magnam nulla, nostrum voluptate fugit sint a doloribus quasi deleniti ab neque eum quo exercitationem dolorem
+        consequatur et laboriosam autem temporibus! Officia enim praesentium aliquam quae vero sint, laborum eaque,
+        facere, debitis magnam eius ad.
+
+    </div>
+
+</body>
+
+</html>

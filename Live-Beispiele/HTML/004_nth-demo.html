@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-demo</title>
+    <style>
+        .border-div{
+            background-color: chartreuse;
+            height: 50px;
+            width: 50px;
+        }
+
+        .green{
+            color: green;
+        }
+
+        /* p:nth-child(3){
+            color: darkmagenta;
+        } */
+
+        /* p:nth-child(3n){
+            color: darkmagenta;
+        } */
+
+        /* p:nth-child(3n+1){
+            color: aqua;
+        } */
+
+        p:nth-child(odd){
+            color: aqua;
+        }
+
+        p:nth-child(even){
+            color: darkmagenta;
+        }
+
+        p:nth-of-type(odd){
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>Paragraph über dem türkisen Div.</p>
+    <div class="border-div">
+        <!-- <p>Das ist Paragraph Nr. 1</p>
+        <p>Das ist Paragraph Nr. 2</p>
+        <p>Das ist Paragraph Nr. 3</p>
+        <div class="green">Text</div>
+        <p>Das ist Paragraph Nr. 4</p>
+        <p>Das ist Paragraph Nr. 5</p> -->
+    </div>
+    <p>Das ist Paragraph Nr. 6</p>
+    <p>Das ist Paragraph Nr. 7</p>
+    <p>Das ist Paragraph Nr. 8</p>
+    <p>Das ist Paragraph Nr. 9</p>
+    <p>Das ist Paragraph Nr. 10</p>
+    <p>Das ist Paragraph Nr. 11</p>
+    <p>Das ist Paragraph Nr. 12</p>
+</body>
+
+</html>

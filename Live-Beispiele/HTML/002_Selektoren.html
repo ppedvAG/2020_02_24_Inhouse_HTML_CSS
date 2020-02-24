@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleketoren</title>
+    <style>
+        /* Typselektoren */
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* Klassenselektoren */
+        .demo-class {
+            color: red;
+        }
+
+        /* ID-Selektor */
+        #demo-id {
+            color: blue;
+        }
+
+
+        /* gilt für beide */
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+
+        /* Kombinatoren */
+
+        
+        /* Nachfahrenselektor (descendant selector) */
+        div span {
+            color: green;
+        }
+
+        /* Kindselektor (child selector) */
+        div>span {
+            font-style: italic;
+            color: red;
+        }
+
+        /* Geschwisterkombinatoren (sibling selector) */
+        /* benachbarter Geschwister Kombinator */
+        h1+p{
+            font-size: 42px;
+        }
+
+        /* Allgemeiner Geschwister Kombinator */
+        h1~p{
+            font-weight: bold;
+        }
+
+        /* Attributselektoren */
+        /* alle, die ein Target-Attribut haben */
+        a[target]{
+
+        }
+
+        /* alle, die ein Target-Attribut haben, das den Wert "_blank" hat */
+        a[target="_blank"]{
+
+        }
+
+        /* alle, die mit einer bestimmten Zeichenfolge beginnen */
+        a[target^="_b"]{}
+
+        /* alle, die mit einer bestimmten Zeichenfolge enden */
+        a[target$="k"]{}
+
+        /* alle, die eine bestimmte Zeichenfolge enthalten */
+        a[target*="an"]{}
+
+
+       /*  .a, .b, .c{}
+
+        div[class^="container"]{
+            padding: 20px;
+        } */
+
+        [class^="container"]{}
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Das ist eine h1 Überschrift</h1>
+    <p>Das ist Paragraph Nr.1</p>
+    <p id="demo-id">Das ist Paragraph Nr.2</p>
+    <div>
+        <span>Das ist eine span</span>
+        <p>Das ist Paragraph Nr.3
+            <span>das ist eine span im p</span>
+        </p>
+    </div>
+    <p>Das ist Paragraph Nr.4</p>
+    <p>Das ist <a href="https://google.com" target="_blank">Paragraph</a>  Nr.5</p>
+    <p class="demo-class">Das ist Paragraph Nr.6</p>
+    <p>Das ist Paragraph Nr.7</p>
+    <p>Das ist Paragraph Nr.8</p>
+    <p>Das ist Paragraph Nr.9</p>
+
+</body>
+
+</html>

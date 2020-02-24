@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spezifität</title>
+    <style>
+
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: dodgerblue;
+        }
+
+        .demo-class01{
+            color: chartreuse;
+        }
+
+        .test-class{
+            color: deeppink;
+        }
+
+        #demo-id{
+            color: darkorange;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Spezifität (specificity)</h1>
+
+    <p>Das ist Paragraph Nr.1</p>
+    <p>Das ist Paragraph Nr.2</p>
+    <p class="demo-class01">Das ist Paragraph Nr.3</p>
+    <p>Das ist Paragraph Nr.4</p>
+    <p class="demo-class01">Das ist Paragraph Nr.5</p>
+    <p class="demo-class01 test-class">Das ist Paragraph Nr.6</p>
+    <p id="demo-id" class="test-class">Das ist Paragraph Nr.7</p>
+    <p>Das ist Paragraph Nr.8</p>
+    <p>Das ist Paragraph Nr.9</p>
+    
+</body>
+</html>
