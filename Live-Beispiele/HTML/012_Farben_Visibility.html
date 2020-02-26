@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farben und Visibility</title>
+    <style>
+        body{
+            /* background-color: tomato; */
+        }
+        div[class^='demo']{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        .demo01{
+            background-color: slateblue;
+        }
+
+        .demo02{
+            background-color: rgb(106, 90, 205);
+
+            /*                        r   g    b                   */
+            /*                        0   0    0     schwarz                  */
+            /*                       255  255  255    weiß         */
+            /*                        46   46   46       grau                */
+        }
+
+
+        .demo03{
+            background-color: rgba(105, 90, 205, 0.5);
+            /* Transparenz zwischen 0 und 1 ; 0 = transparent */
+        }
+
+        .demo04{
+            background-color: #6a5bcd;
+/*                                r g b                        */
+/*        123456789abcdef                                                          */
+/*        123456789 10 11 12 13 14 15 */
+
+
+
+        }
+
+        .demo06{
+            background-color: springgreen;
+            /* visibility: hidden; */
+            /* visibility: visible; */
+        }
+
+        .demo07{
+            background-color: turquoise;
+            /* display: none; */
+            /* display: block; */
+        }
+
+        .demo08{
+            background-color: yellowgreen;
+            opacity: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="demo01">01</div>
+    <div class="demo02">02</div>
+    <div class="demo03">03</div>
+    <div class="demo04">04</div>
+    <div class="demo05">05</div>
+    <hr>
+    <div class="demo06">06</div>
+    
+    <div class="demo07">07</div>
+    <div class="demo08">08</div>
+</body>
+</html>

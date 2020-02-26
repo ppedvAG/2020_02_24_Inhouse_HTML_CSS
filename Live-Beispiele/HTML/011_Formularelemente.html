@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularelemente</title>
+    <style>
+        form {
+            /* background-color: lightseagreen; */
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        fieldset {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="POST">
+
+        <div class="lbl-inp-container">
+            <label for="first-name" class="lbl-demo">Vorname:</label>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="lbl-inp-container">
+            <label for="last-name" class="lbl-demo">Nachname:</label>
+            <input type="text" required>
+        </div>
+        <div class="lbl-inp-container">
+            <label for="pw" class="lbl-demo">Passwort:</label>
+            <input type="password" id="pw" pattern="/d">
+        </div>
+        <div class="lbl-inp-container">
+            <label for="number" class="lbl-demo">Nummer:</label>
+            <input type="number" id="number" min="0" max="100" step="5">
+        </div>
+        <!-- <div class="lbl-inp-container">
+            <label for="homepage" class="lbl-demo">Homepage:</label>
+            <input type="url" id="homepage" placeholder="https://musterseite.de" value="https://"
+                title="Bitte geben Sie https:// ein...">
+        </div>
+        <div class="lbl-inp-container">
+            <label for="email" class="lbl-demo">Email:</label>
+            <input type="email" id="email">
+        </div> -->
+        <div class="lbl-inp-container">
+            <label for="mycolor" class="lbl-demo">Lieblingsfarbe:</label>
+            <input type="color" id="mycolor">
+        </div>
+        <div class="lbl-inp-container">
+            <label for="start" class="lbl-demo">Start:</label>
+            <input type="range" id="start" min="0" max="200" value="0" step="10">
+        </div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <select name="TEST" id="">
+            <option value="margherita">Margherita</option>
+            <option value="dellacasa">Della Casa</option>
+            <option value="tonno">Tonno</option>
+        </select>
+        <input type="text" list="farben" autocomplete="on" placeholder="bitte auswählen">
+        <datalist id="farben">
+            <option value="rot" label="hell">rot</option>
+            <option value="blau" label="dunkel">blau</option>
+            <option value="gelb" label="hell">gelb</option>
+        </datalist>
+        <fieldset>
+            <legend>Pizzas</legend>
+            <div class="lbl-inp-container">
+                <label for="first-name" class="lbl-demo">Vorname:</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="lbl-inp-container">
+
+                <label for="last-name" class="lbl-demo">Nachname:</label>
+                <input type="text">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="lbl-inp-container">
+                <input type="radio" name="pizzas" checked>Margherita
+            </div>
+            <div class="lbl-inp-container">
+                <input type="radio" name="pizzas">Tonno
+            </div>
+            <div class="lbl-inp-container">
+                <label for="dellacasa"><input type="radio" name="pizzas" id="dellacasa">Della Casa</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="lbl-inp-container">
+                <input type="checkbox" name="extras" value="corn">Mais
+            </div>
+            <div class="lbl-inp-container">
+                <input type="checkbox" name="extras" value="bacon">Schinken
+            </div>
+            <div class="lbl-inp-container">
+                <label for="dellacasa"><input type="checkbox" name="extras" id="paprika" value="paprika">Paprika</label>
+            </div>
+        </fieldset>
+
+       
+
+
+
+
+        <div class="lbl-inp-container">
+            <input type="submit" value="Abschicken">
+            <input type="reset">
+            <!-- <button>Button</button> -->
+        </div>
+
+    </form>
+
+    <div>
+        Lorem <abbr title="World Health Organisation">WHO</abbr> ipsum dolor sit amet.
+    </div>
+
+</body>
+
+</html>

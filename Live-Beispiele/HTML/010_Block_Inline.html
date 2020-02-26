@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block- und Inline-Elemente</title>
+    <style>
+        /* :root{
+            font-size: 40px;
+        } */
+        body {
+            margin: 0;
+        }
+
+        .demo-div {
+            /* width: 100%; */
+            background-color: gold;
+            height: 200px;
+        }
+
+        p {
+            background-color: greenyellow;
+            /* margin: 2rem 0; */
+        }
+
+        span {
+            color: darkmagenta;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        .inp-container {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            /* background-color: lawngreen; */
+        }
+
+        .container {
+            background-color: indigo;
+        }
+
+        .inline-demo {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-div"> <a href="#">Lorem</a> ipsum, dolor sit amet consectetur adipisicing elit. Fugit eum nobis
+        officiis aut, quam
+        autem. Soluta, beatae ad incidunt nobis earum quam placeat laudantium atque qui eaque. Enim id cupiditate quia
+        inventore, odit exercitationem laborum aperiam animi fuga recusandae nulla repellat eveniet hic accusantium,
+        itaque voluptatibus nesciunt, voluptates a <a href="#">temporibus</a> ad asperiores aliquam? Temporibus, amet
+        illum et dolore
+        quae dolorem necessitatibus <span>dolor eum vero ipsam repellat neque</span> praesentium facere sed. Numquam
+        quod vitae,
+        excepturi dolorem aliquam mollitia perferendis molestias architecto assumenda quibusdam eum debitis at quidem
+        esse adipisci, nobis neque obcaecati ducimus, quo repudiandae. Tempora esse minus sapiente doloremque eius!
+    </div>
+    <p>Hallo</p>
+    <img src="../images/ocelot-628109_1920.jpg" alt="">
+    <img src="../images/mountains-4777410_640.jpg" alt="">
+    <img src="../images/sea.jpg" alt="">
+
+
+    <input type="text">
+    <input type="text">
+    <input type="text">
+
+
+    <form action="">
+        <div class="inp-container">
+            <label for="first-name">Vorname:</label>
+            <input type="text" id="first-name">
+        </div>
+        <div class="inp-container">
+            <label for="last-name">Nachname:</label>
+            <input type="text" id="last-name">
+        </div>
+        <div class="inp-container">
+            <label for="pw">Passwort:</label>
+            <input type="text" id="pw">
+        </div>
+    </form>
+
+    <div class="container">
+        <div class="inline-demo"></div>
+        <div class="inline-demo"></div>
+        <div class="inline-demo"></div>
+        <div class="inline-demo"></div>
+        <div class="inline-demo"></div>
+        <div class="inline-demo"></div>
+        <div class="inline-demo"></div>
+    </div>
+</body>
+
+</html>
