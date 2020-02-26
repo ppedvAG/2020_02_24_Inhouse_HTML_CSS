@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+        }
+        fieldset {
+            width: 33.3333%;
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+        }
+
+        .row:first-of-type{
+            border-bottom: 1px solid black;
+        }
+
+        .row+.row{
+            margin-top: 5px;
+        }
+
+        .header {
+            width: 62.5%;
+        }
+
+        .small {
+            width: 12.5%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+
+<fieldset>
+    <legend>Pizzas</legend>
+        <div class="row">
+            <div class="header">Auswahl</div>
+            <div class="small">s</div>
+            <div class="small">m</div>
+            <div class="small">l</div>
+        </div>
+        <div class="row">
+            <div class="header">Margherita</div>
+            <div class="small"><input type="radio" name="pizza"></div>
+            <div class="small"><input type="radio" name="pizza"></div>
+            <div class="small"><input type="radio" name="pizza"></div>
+        </div>
+        <div class="row">
+            <div class="header">Della Casa</div>
+            <div class="small"><input type="radio" name="pizza"></div>
+            <div class="small"><input type="radio" name="pizza"></div>
+            <div class="small"><input type="radio" name="pizza"></div>
+        </div>
+        <div class="row">
+            <div class="header">Tonno</div>
+            <div class="small"><input type="radio" name="pizza"></div>
+            <div class="small"><input type="radio" name="pizza"></div>
+            <div class="small"><input type="radio" name="pizza"></div>
+        </div>
+        <div class="row">
+            <div class="header">Funghi</div>
+            <div class="small"><input type="radio" name="pizza"></div>
+            <div class="small"><input type="radio" name="pizza"></div>
+            <div class="small"><input type="radio" name="pizza"></div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Extras</legend>
+    </fieldset>
+    <fieldset>
+        <legend>Dolci</legend>
+    </fieldset>
+
+    </form>
+</body>
+
+</html>
