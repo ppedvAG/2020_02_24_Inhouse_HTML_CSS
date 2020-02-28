@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    <link rel="stylesheet" href="small.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="medium.css" media="screen and (min-width: 1000px)">
+    <link rel="stylesheet" href="big.css" media="screen and (min-width: 1600px)">
+    -->
+    <title>Media Queries</title>
+    <style>
+        /* @import url(medium.css) screen and (min-width: 1000px); */
+
+        .demo {
+            width: 500px;
+            height: 350px;
+            background-color: lawngreen;
+        }
+
+        @media screen and (min-width: 600px) {
+
+            .demo {
+                background-color: blue;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+
+            .demo {
+                background-color: red;
+            }
+        }
+
+        @media (orientation: landscape){ /* Styling */}
+    </style>
+</head>
+
+<body>
+    <div class="demo"></div>
+</body>
+
+</html>

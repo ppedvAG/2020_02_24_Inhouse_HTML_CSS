@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            background-color: lightcyan;
+            grid-template-columns: 150px repeat(2, auto) 200px;
+            /* grid-template-rows: 150px 250px auto; */
+            /* grid-gap: 10px; */
+            column-gap: 10px;
+            row-gap: 20px;
+            /* height: 100vh; */
+        }
+
+        .grid-item1 {
+            background-color: lightgreen;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .grid-item2 {
+            background-color: lightsteelblue;
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+
+        .grid-item3 {
+            background-color: lavender;
+            grid-column: 2/4;
+            grid-row: 2/4;
+        }
+
+        .grid-item4 {
+            background-color: mediumaquamarine;
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">
+            Hallo
+        </div>
+        <div class="grid-item2"></div>
+        <div class="grid-item3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos consequatur molestiae provident velit
+            officiis alias eos quisquam autem laborum unde ipsa similique sapiente ducimus dolorum quis illo, dolorem
+            itaque hic perspiciatis. Sapiente, sequi! Facilis quo architecto eligendi repellendus voluptatem tempora,
+            asperiores voluptatibus nam consequatur, cupiditate quisquam, obcaecati sapiente! Deserunt laborum iure
+            aspernatur facilis eius libero voluptas consequatur mollitia dolorem, sed, animi maxime ipsum sequi soluta
+            veritatis facere dolor! Consequuntur soluta asperiores incidunt nesciunt, natus enim veniam debitis
+            reiciendis est sequi eius reprehenderit unde dolorem quaerat inventore dolor non laboriosam rerum alias id?
+            Libero, itaque odit earum, hic labore dolorum quibusdam quasi vero molestias, dolores reiciendis numquam
+            impedit iste odio blanditiis eius nulla inventore quis debitis fugit deleniti? Magnam ipsum necessitatibus,
+            suscipit dolore obcaecati quia veniam ipsam a! At excepturi iste eaque quibusdam, voluptatibus aperiam
+            repudiandae ipsum minima fugit nam assumenda ex rem asperiores sint fugiat sequi obcaecati, quam quas!
+            Error, consectetur totam aliquam vel inventore numquam reiciendis cupiditate beatae corporis consequuntur
+            dolorem. Quidem sequi nesciunt aut ea aspernatur reprehenderit id omnis nihil, dolores in natus doloribus
+            labore animi voluptas, deleniti tempore? Quibusdam rerum nam a vero id doloribus fugit quod consequuntur
+            suscipit tempora, tenetur corporis veniam, dolor temporibus saepe!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste inventore quia explicabo facere modi voluptate
+            neque excepturi molestias perferendis deserunt, magnam dolorum quibusdam quidem doloribus illum blanditiis
+            et provident incidunt minus error dolorem, fugiat necessitatibus nesciunt? Distinctio harum quam, voluptatum
+            dolores animi asperiores hic, quasi fugit, saepe ipsum facere et! Quisquam, nostrum suscipit! Dolorem quo
+            vero modi voluptates, qui vel magni velit hic voluptatem expedita eveniet amet harum adipisci natus fugit
+            laboriosam quisquam rem repellendus inventore perspiciatis. Maiores corrupti debitis natus tenetur totam et
+            voluptas tempora sunt! Consequuntur odio, quibusdam nobis quasi ea vitae magni, ad itaque quis repudiandae
+            esse voluptatem sunt. Earum soluta dignissimos repellendus similique voluptas quia, illo beatae eos illum
+            culpa, nobis, odit hic minima nemo reiciendis aut expedita nostrum exercitationem esse necessitatibus sint
+            vero debitis perspiciatis obcaecati? Iure unde sapiente suscipit asperiores delectus commodi, iste quisquam
+            voluptatum minus. Impedit ex molestiae, dolorem consectetur quisquam dicta. Maiores quas debitis veritatis
+            possimus aspernatur nisi quo? Doloremque magni, aliquam corporis eius neque labore recusandae expedita fugit
+            quas nam molestias fuga sequi rem, tenetur iste vero minima laboriosam? Nesciunt praesentium hic veniam non.
+            Corrupti quod ab fugiat ex nihil labore eveniet, repudiandae perferendis, inventore cum veniam sit eligendi
+            deserunt iusto! Est nam, perspiciatis dicta eius, exercitationem rem consequatur ab repellendus at ullam
+            excepturi aperiam libero! Aut ratione qui dolorem recusandae quod excepturi inventore, corrupti
+            necessitatibus, nostrum at eaque magni atque nihil dolore laborum, accusantium esse nulla nobis! Quasi
+            fugiat ipsa error maxime dignissimos, placeat laudantium odio tenetur nulla? Dolor dolorum incidunt eveniet
+            provident. Tempora ea excepturi quisquam dolor, voluptatibus laborum nemo consectetur ipsum quas quo ipsam
+            aliquam quam numquam eos iusto, minima rem autem commodi, ratione harum assumenda quidem! Possimus laborum
+            quaerat eos, et explicabo nemo ullam saepe quam omnis placeat cum hic repellendus illum facilis perspiciatis
+            cumque perferendis magni.
+        </div>
+        <div class="grid-item4"></div>
+    </div>
+</body>
+
+</html>

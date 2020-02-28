@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hintergrundbilder</title>
+    <style>
+        body{
+            background-image: url(../images/bridge.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        div[class^="bg-demo"]{
+            height: 50vh;
+            border: 2px solid black;
+            margin-bottom: 50px;
+        }
+
+        .bg-demo01{
+            background-image: url(../images/bg_eule.jpg);
+            background-repeat: no-repeat;
+        }
+
+        .bg-demo02{
+            background-image: url(../images/bg_muster1.jpg);
+        }
+
+        .bg-demo03{
+            background-image: url(../images/bg_muster2.jpg);
+            background-repeat: repeat-x;
+        }
+
+        .bg-demo04{
+            background-image: url(../images/bg_muster1.jpg);
+            background-repeat: repeat-y;
+        }
+
+        .bg-demo05{
+            background-image: url(../images/bg_eule.jpg);
+            background-position: top right;
+            background-repeat: no-repeat;
+        }
+
+        .bg-demo06{
+            /* background: url(../images/bg_eule.jpg) no-repeat center; */
+            background-image: url(../images/bg_eule.jpg);
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-demo07{
+            background-color: white;
+            background-image: url(../images/bg_eule.jpg);
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .bg-demo08{
+            background-image: url(../images/bg_muster1.jpg), url(../images/bg_muster2.jpg);
+            background-repeat: repeat-x, repeat-y;
+        }
+
+
+        .bg-demo09{
+            background-image: url(../images/bg_eule.jpg);
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: 500px 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="../images/bg_muster1.jpg" alt=""> -->
+    <div class="bg-demo01"></div>
+    <div class="bg-demo02"></div>
+    <div class="bg-demo03"></div>
+    <div class="bg-demo04"></div>
+    <div class="bg-demo05"></div>
+    <div class="bg-demo06"></div>
+    <div class="bg-demo07"></div>
+    <div class="bg-demo08"></div>
+    <div class="bg-demo09"></div>
+</body>
+</html>

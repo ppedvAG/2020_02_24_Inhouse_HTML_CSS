@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        .example-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            border: 1px solid orangered;
+        }
+
+        .transform-box {
+            width: 200px;
+            height: 200px;
+            background-color: dodgerblue;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .upper,
+        .lower {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        #demo01{
+            transform: rotate(45deg);
+            /* transform: rotateX(45deg) */
+        }
+
+        #demo02{
+            transform: skewY(45deg);
+        }
+
+        #demo03{
+            transform:skew(45deg, 15deg);
+        }
+
+        #demo04{
+            transform: scale(1.5);
+        }
+
+        #demo05:hover{
+            transform: scale(1.5);
+        }
+
+        #demo06:hover{
+            transform: rotate(45deg) translate(250px) scale(1.5);
+            transition-duration: 2s;
+            transition-delay: 200ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="example-container">
+        <div id="demo01" class="transform-box">
+            <div class="upper">
+                <div>TL</div>
+                <div>TR</div>
+            </div>
+            <div class="lower">
+                <div>BL</div>
+                <div>BR</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <div id="demo02" class="transform-box">
+            <div class="upper">
+                <div>TL</div>
+                <div>TR</div>
+            </div>
+            <div class="lower">
+                <div>BL</div>
+                <div>BR</div>
+            </div>
+        </div>
+    </div>
+    <div class="example-container">
+        <div id="demo03" class="transform-box">
+            <div class="upper">
+                <div>TL</div>
+                <div>TR</div>
+            </div>
+            <div class="lower">
+                <div>BL</div>
+                <div>BR</div>
+            </div>
+        </div>
+    </div>
+    <div class="example-container">
+        <div id="demo04" class="transform-box">
+            <div class="upper">
+                <div>TL</div>
+                <div>TR</div>
+            </div>
+            <div class="lower">
+                <div>BL</div>
+                <div>BR</div>
+            </div>
+        </div>
+    </div>
+    <div class="example-container">
+        <div id="demo05" class="transform-box">
+            <div class="upper">
+                <div>TL</div>
+                <div>TR</div>
+            </div>
+            <div class="lower">
+                <div>BL</div>
+                <div>BR</div>
+            </div>
+        </div>
+    </div>
+    <div class="example-container">
+        <div id="demo06" class="transform-box">
+            <div class="upper">
+                <div>TL</div>
+                <div>TR</div>
+            </div>
+            <div class="lower">
+                <div>BL</div>
+                <div>BR</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

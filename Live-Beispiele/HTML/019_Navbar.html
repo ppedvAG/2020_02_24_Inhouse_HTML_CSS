@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigationsleiste</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #F0ECCD;
+            font-size: 16px;
+        }
+        header {
+            height: 100px;
+            background-color: #1A2434;
+        }
+
+        .main-nav-container ul{
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        .main-nav {
+            height: 70px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            background-color: #002F63;
+            color: #04C4D7;
+        }
+
+        .main-nav::after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .main-nav>li {
+            float: left;
+        }
+
+        .main-nav>li>a {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .main-nav>li>a:hover {
+            background-color: #1A2434;
+            color: #F0ECCD;
+        }
+
+        .text-container {
+            padding: 20px;
+        }
+
+        a[target="_blank"] {
+            color: #04C4D7;
+        }
+
+        .dropdown-top{
+            position: relative;
+        }
+
+        
+        .dropdown-top:hover .dropdown-list{
+            display: block;
+        }
+
+        
+        .dropdown-list{
+            display: none;
+            position: absolute;
+            top: 70px;
+            /* left: 20px; */
+            background-color: #F0ECCD;
+            width: 250px;
+        }
+
+        .dropdown-list>li>a{
+            box-sizing: border-box;
+            width: 100%;
+            display: inline-block;
+            padding: 5px 0 5px 20px;
+        }
+
+        .dropdown-list>li>a:hover{
+            background-color: #1A2434;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <nav class="main-nav-container">
+
+        <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown-top">
+                <a href="#">Gallery</a>
+                <ul class="dropdown-list">
+                    <li>
+                        <a href="#">Building</a>
+                    </li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Favourites</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Products</a></li>
+        </ul>
+
+
+    </nav>
+    <main>
+        <div class="text-container">
+            Lorem ipsum dolor sit <a href="#" target="_blank">amet consectetur,</a> adipisicing elit. Cupiditate
+            sapiente, vero itaque magnam fugiat
+            nam. Asperiores ex nisi incidunt sed quisquam quidem qui hic tenetur, voluptas non. Voluptatum obcaecati
+            iusto eos optio aliquam ducimus possimus perspiciatis unde asperiores laboriosam nulla, ea facilis debitis
+            quod consequuntur delectus ipsum quisquam quas quam.
+        </div>
+
+        <ul>
+            <li>abc</li>
+            <li>abc
+                <ul>
+                    <li>cde</li>
+                    <li>cde</li>
+                </ul>
+            </li>
+            <li>abc</li>
+        </ul>
+    </main>
+</body>
+
+</html>
