@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung</title>
+    <style>
+        :root {
+            --main-light: rgb(242, 242, 242);
+            --main-medium: rgb(195, 195, 195);
+            --main-dark: rgb(46, 46, 46);
+            --emphasis-light: rgb(102, 255, 0);
+            --emphasis-dark: rgb(31, 78, 0);
+        }
+
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .main-header-container {
+            color: var(--main-dark);
+            height: 70vh;
+            padding: 4rem;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-end;
+            font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+            font-size: 5vw;
+        }
+
+        .main-header-container>div>p {
+            font-size: 4vw;
+            color: var(--emphasis-dark);
+        }
+
+        .main-nav-container {
+            background-color: var(--main-medium);
+            position: fixed;
+            top: 0;
+        }
+
+        .main-nav,
+        .dropdown-list {
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        .main-nav::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .main-nav>li {
+            float: left;
+        }
+
+        .main-nav>li>a {
+            color: var(--main-dark);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+        }
+
+        .main-nav>li>a:hover {
+            color: var(--main-light);
+            background-color: var(--emphasis-dark);
+        }
+
+        .dropdown-top {
+            position: relative;
+        }
+
+        .dropdown-top:hover .dropdown-list {
+            display: block;
+        }
+
+        .dropdown-list {
+            display: none;
+            position: absolute;
+            top: 2.62rem;
+            left: 0;
+            color: var(--main-dark);
+            background-color: var(--main-light);
+        }
+
+        .dropdown-list>li>a {
+            padding: 0.25rem 1rem;
+            display: inline-block;
+            width: 8rem;
+            color: inherit;
+        }
+
+        .dropdown-list>li>a:hover {
+            color: var(--main-light);
+            background-color: var(--emphasis-dark);
+        }
+
+        section {
+            display: flex;
+            padding: 3rem;
+        }
+
+        section:nth-of-type(odd) {
+            background-color: var(--main-light);
+        }
+
+        section>.flex-3 {
+            width: 33.333%;
+            padding: 1rem;
+        }
+
+        .container-light,
+        .container-dark {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+            width: 50%;
+            color: var(--main-dark);
+        }
+
+        .container-light>h2,
+        .container-dark>h2 {
+            align-self: flex-start;
+        }
+
+        .container-light {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .container-dark {
+            background-color: var(--main-light);
+        }
+
+        section::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .image-box {
+            width: 100%;
+        }
+
+        .image-box>img {
+            display: block;
+            width: 100%;
+        }
+
+        .special-text {
+            border-left: 3px solid var(--emphasis-light);
+            color: var(--emphasis-dark);
+            padding-left: 1rem;
+            font-family: Consolas, monospace;
+        }
+
+        .main-footer-container {
+            padding: 2.5rem;
+            color: var(--main-light);
+            background-color: var(--main-dark);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button-normal {
+            display: inline-block;
+            padding: 0.7rem 1.2rem;
+            color: var(--emphasis-dark);
+            background-color: var(--emphasis-light);
+            border: 2px outset var(--emphasis-light);
+            border-radius: 0.2rem;
+        }
+
+        a>.button-normal:hover {
+            border-style: inset;
+            color: var(--main-light);
+        }
+
+        @media all and (max-width: 1000px) {
+            html{
+                font-size: 16px;
+            }
+
+            section {
+                flex-wrap: wrap;
+            }
+
+            .container-light,
+            .container-dark {
+                width: 100%;
+            }
+
+            section>.flex-3 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="main-header-container" id="main-header-container">
+            <div>
+                MyCompany
+                <p>...is the best</p>
+            </div>
+        </header>
+        <nav class="main-nav-container">
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown-top"><a href="#">Gallery</a>
+                    <ul class="dropdown-list">
+                        <li><a href="#">Holiday Pics</a></li>
+                        <li><a href="#">Favourite Pics</a></li>
+                        <li><a href="#">Company Pics</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-top"><a href="#">About Us</a>
+                    <ul class="dropdown-list">
+                        <li><a href="#">Management</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-top"><a href="#">Links</a>
+                    <ul class="dropdown-list">
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-content-container">
+            <section>
+                <div class="container-light">
+                    <div class="image-box">
+                        <img src="../Live-Beispiele/images/greater-rhea-4837821_1920.jpg" alt="">
+                    </div>
+                </div>
+                <div class="container-dark">
+                    <h2>Überschrift</h2>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, obcaecati nihil pariatur cum
+                    exercitationem consequuntur amet, sed, in labore doloribus sint. Quaerat, hic accusantium corrupti
+                    quis voluptas vel obcaecati eaque ea illo recusandae. Unde natus assumenda autem earum reiciendis
+                    et, quis repudiandae, facilis at aperiam id ab fugit beatae provident iste, ipsum ut corrupti
+                    officiis? Reprehenderit pariatur vitae eum debitis explicabo hic atque voluptates fugit possimus in
+                    inventore quaerat impedit modi et error necessitatibus, harum molestias temporibus magnam placeat
+                    asperiores.
+                </div>
+            </section>
+            <section>
+                <div class="container-light">
+                    <h2>Tolle Überschrift</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea esse voluptatibus vel
+                    accusantium dolorem placeat voluptates molestias expedita quaerat temporibus, nam, beatae voluptatum
+                    ipsam provident libero iusto molestiae optio illo eligendi porro! Alias doloremque fugiat aliquid
+                    eum reprehenderit ratione voluptate iste a labore similique saepe dolor repellat, et quam fugit
+                    consequuntur quia facilis earum? Dolores at ipsa soluta pariatur laboriosam harum distinctio, culpa
+                    iusto sapiente blanditiis ad mollitia doloribus!
+                </div>
+                <div class="container-dark">
+                    <div class="image-box">
+                        <img src="../Live-Beispiele/images/penguins-429128_1920.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="flex-3">
+                    <div class="image-box">
+                        <img src="../Live-Beispiele/images/sea.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex-3">
+                    <div class="image-box">
+                        <img src="../Live-Beispiele/images/ocelot-628109_1920.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex-3">
+                    <div class="image-box">
+                        <img src="../Live-Beispiele/images/canyon.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-light">
+                    <div class="special-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, quibusdam. Quas facilis
+                        veritatis ullam assumenda. Non accusantium laboriosam vero possimus neque nesciunt corporis,
+                        libero autem.
+                    </div>
+                </div>
+                <div class="container-dark">
+                    <h2>Super Überschrift</h2>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum tenetur exercitationem eaque! Sunt
+                    alias pariatur rem minima ullam reprehenderit numquam esse adipisci neque. Officiis officia,
+                    doloremque nesciunt facere ipsa atque maiores harum dolor consequuntur reprehenderit labore nisi
+                    soluta cumque repudiandae delectus eius illum perferendis nulla aliquid dolore iusto? Laborum harum
+                    at cupiditate! Quasi soluta inventore deserunt praesentium nam atque odit? Accusantium omnis quas
+                    eum modi quam explicabo dignissimos odit eveniet, quae, vitae reiciendis magni dolor!
+                </div>
+            </section>
+
+            <section>
+                <div class="container-light">
+                    <h2>Beste Überschrift</h2>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti assumenda voluptas odit officiis
+                    saepe quia eveniet sequi minus animi velit at est possimus quo sunt expedita, unde porro doloribus,
+                    dolorum consequuntur. Sunt sequi eligendi quibusdam dolores repellat praesentium modi accusantium
+                    quas assumenda porro possimus, veniam saepe quo repudiandae aliquid minima voluptatum nisi soluta
+                    enim! Soluta animi nulla illo voluptatem commodi dignissimos, repellendus iure tempore fuga,
+                    temporibus expedita ipsam placeat magni optio nesciunt sit iusto consectetur dolorem autem debitis
+                    vitae quos?
+                </div>
+                <div class="container-dark">
+                    <div class="image-box">
+                        <img src="../Live-Beispiele/images/animals-2178578_1920.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-light">
+                    <div class="special-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis laborum quae rem ea
+                        illum?
+                    </div>
+                </div>
+                <div class="container-dark">
+                    <h2>Klasse Überschrift</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quam quas eveniet saepe
+                    doloribus, molestias ipsa nostrum eius iste harum autem mollitia fugit animi nisi! Quas, eum!
+                    Assumenda odit quisquam eum necessitatibus neque modi recusandae in ipsam, repellendus iure adipisci
+                    optio nemo excepturi debitis, quod labore officia quaerat. Magni dicta quia ducimus quod ipsam
+                    veritatis. Sint eveniet molestias ullam culpa unde asperiores nesciunt aspernatur, maxime cumque,
+                    repellendus amet! Quasi, alias!
+                </div>
+            </section>
+            <section>
+                <div class="flex-3">
+                    <div class="image-box">
+                        <img src="../Live-Beispiele/images/canyon.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex-3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nostrum officia consectetur! Sunt
+                    laborum quia possimus mollitia cum assumenda ut porro saepe soluta! Odio eligendi, similique officia
+                    quos sequi omnis commodi sapiente animi velit iusto ipsum, tempora ipsa sit alias.
+                </div>
+                <div class="flex-3">
+                    <div class="image-box">
+                        <img src="../Live-Beispiele/images/lake.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="main-footer-container">
+            Das ist ein großartiger Footer.
+            <a href="#main-header-container">
+                <div class="button-normal">Back to top</div>
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
